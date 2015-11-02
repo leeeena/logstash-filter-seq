@@ -1,11 +1,23 @@
 # Logstash Plugin
 
-[![Build
-Status](http://build-eu-00.elastic.co/view/LS%20Plugins/view/LS%20Filters/job/logstash-plugin-filter-example-unit/badge/icon)](http://build-eu-00.elastic.co/view/LS%20Plugins/view/LS%20Filters/job/logstash-plugin-filter-example-unit/)
-
 This is a plugin for [Logstash](https://github.com/elastic/logstash).
 
 It is fully free and fully open source. The license is Apache 2.0, meaning you are pretty much free to use it however you want in whatever way.
+
+## logstash-filter-seq
+
+This plugin adds sequence numbers to each message emitted, preserving the original source order. Usage:
+
+```
+filter {
+  seq {}
+}
+```
+
+## Gotchas
+
+* Logstash behavior when hitting system maxint is unknown
+* The sequence will be restarted on every logstash restart
 
 ## Documentation
 
