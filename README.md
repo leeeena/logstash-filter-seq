@@ -6,7 +6,9 @@ It is fully free and fully open source. The license is Apache 2.0, meaning you a
 
 ## logstash-filter-seq
 
-This plugin adds sequence numbers to each message emitted, preserving the original source order. Usage:
+This plugin adds sequence numbers to each message emitted, preserving the original source order. 
+
+## Usage
 
 ```
 filter {
