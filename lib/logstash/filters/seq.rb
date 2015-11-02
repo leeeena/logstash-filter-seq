@@ -14,6 +14,10 @@ require "set"
 #     }
 #
 # The `field` is the field you want added to the event.
+#
+# Thanks to Alcanzar@github
+# http://stackoverflow.com/questions/23920655/include-monotonically-increasing-value-in-logstash-field/23921517#23921517
+#
 class LogStash::Filters::Seq < LogStash::Filters::Base
 
   config_name "seq"
